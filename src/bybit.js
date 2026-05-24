@@ -8,7 +8,6 @@ const BASE = cfg.BYBIT_TESTNET
 
 const RECV_WINDOW = '5000';
 
-// GET uses queryString, POST uses raw JSON body (Bybit v5 requirement)
 function signGet(params) {
   const ts = Date.now().toString();
   const query = Object.keys(params).sort().map(k => `${k}=${params[k]}`).join('&');
