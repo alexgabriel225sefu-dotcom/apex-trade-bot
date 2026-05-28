@@ -17,9 +17,7 @@ async function callGroq(prompt) {
   const { data } = await axios.post(
     'https://api.groq.com/openai/v1/chat/completions',
     {
-      model: ' model: 'gemma2-9b-it',
-
- // model gratuit puternic
+      model: 'gemma2-9b-it', // model gratuit puternic
       messages: [{ role: 'user', content: prompt }],
       max_tokens: 400,
       temperature: 0,
